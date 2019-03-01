@@ -1,0 +1,101 @@
+  <meta charset="utf-8">
+  <script>
+    var sum = +prompt("Enter sum");
+	
+		
+    var k500 = Math.floor(sum / 500);
+        
+		
+		if (k500 > 10) {
+        k500 = 10;
+	    } 
+		sum -= k500 * 500;
+		
+	var k200 = Math.floor(sum / 200);
+        
+		
+		if (k200 > 10) {
+        k200 = 10;
+	    } 
+		sum -= k200 * 200;
+		
+		
+    var k100 = Math.floor(sum / 100);
+        
+		
+		if (k100 > 10) {
+        k100 = 10;
+	    } 
+		sum -= k100 * 100;
+	
+	
+	var k50 = Math.floor(sum / 50);
+        
+		
+		if (k50 > 10) {
+        k50 = 10;
+	    } 
+		sum -= k50 * 50;
+		
+		
+    var k20 = Math.floor(sum / 20);
+        
+		
+		if (k20 > 10) {
+        k20 = 10;
+	    } 
+		sum -= k20 * 20;
+		
+		
+    var k10 = Math.floor(sum / 10);
+        
+		
+		if (k10 > 10) {
+        k10 = 10;
+	    } 
+		sum -= k10 * 10;
+		
+		
+	var k5 = Math.floor(sum / 5);
+        
+		
+		if (k5 > 10) {
+        k5 = 10;
+	    } 
+		sum -= k5 * 5;
+		
+		
+	var k2 = Math.floor(sum / 2);
+        
+		
+		if (k2 > 10) {
+        k2 = 10;
+	    } 
+		sum -= k2 * 2;
+		
+	var k1 = Math.floor(sum / 1);
+        
+		
+		if (k1 > 10) {
+        k5 = 10;
+	    } 
+		sum -= k1 * 1;
+		
+	
+	var totalCurrency = k500 + k200 + k100 + k50 + k20 + k10 + k5 + k2 + k1;
+	
+	if (totalCurrency > 90) {
+		console.log("Enter the less sum")
+		} else {
+	console.log("500x", k500);
+	console.log("200x", k200);
+	console.log("100x", k100);
+	console.log("50x", k50);
+	console.log("20x", k20);
+	console.log("10x", k10);
+	console.log("5x", k5);
+	console.log("2x", k2);
+	console.log("1x", k1);
+	console.log("The total number of currency:", totalCurrency);
+	}
+  </script>
